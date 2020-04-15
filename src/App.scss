@@ -1,0 +1,40 @@
+@import "~bootstrap/scss/bootstrap";
+html, body {
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-image: url(./assests/corona.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  .App {
+    text-align: center;
+    .header-bar {
+      color: white;
+      background-color: blue;
+    }
+    .specific-country{
+      .box-shadow {
+        box-shadow: 10px 10px 10px rebeccapurple;
+      }
+      .count {
+        font-weight: 900;
+        font-size: 35px;
+        &.active {
+          color:#ffc107;
+        }
+        &.confirmed {
+          color: #001323;
+        }
+        &.death {
+          color: #efefef;
+        }
+        &.recover {
+          color: #0d0390;
+        }
+      }
+    }
+  }
+}
